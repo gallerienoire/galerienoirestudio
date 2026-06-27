@@ -6,3 +6,4 @@ __pycache__/
 .env
 backend/uploads/*
 !backend/uploads/.gitkeep
+ai-pipeline/generated-artwork/
