@@ -1,0 +1,30 @@
+{
+  "slug": "atmospheric_landscape",
+  "title": "Distance in Fog",
+  "artist_persona": "A landscape painter working in the romantic tradition",
+  "mood": "expansive serene",
+  "description": "An atmospheric landscape that extends the intimately scaled ceiling into an imagined horizon. Layers of #ded2bf, #997a4d, and #c4ddeb recede into the distance, creating the illusion of a living room opening onto a wider vista. The bright crisp treatment aligns with the room's existing neutral light sources, making the piece feel like a natural extension of the space.",
+  "artwork_rationale": "This piece responds to the room's Bohemian Eclectic architecture (high confidence) with its refined composition. The intimately scaled ceiling (3.4m) and bright crisp lighting conditions informed the scale and contrast. At 3.8m viewing distance, the large statement format fills the optimal field of view.",
+  "color_rationale": "The palette draws from the room's dominant #ded2bf and accent #997a4d tones, ensuring mixed harmony with the existing neutral interior. The medium vibrancy level matches the room's subdued character.",
+  "image_prompt": "A high-end digital artwork titled 'Distance in Fog', large statement format. An atmospheric landscape that extends the intimately scaled ceiling into an imagined horizon. Layers of #ded2bf, #997a4d, and #c4ddeb recede into the distance, creating the illusion of a living room opening onto a wider vista. The bright crisp treatment aligns with the room's existing neutral light sources, making the piece feel like a natural extension of the space. The piece is museum-quality, suitable for a luxury interior. Color palette centered on #ded2bf with #997a4d accents. Style: expansive serene. The artwork should feel like a commissioned gallery piece \u2014 not generic, not templated, but intentionally made for this specific room with Bohemian Eclectic architecture.",
+  "recommended_frame": {
+    "style": "gallery_profile",
+    "material": "charcoal_wood",
+    "finish": "matte_ebp",
+    "profile": "contemporary",
+    "depth_cm": 4,
+    "description": "A charcoal-stained wood gallery profile frame with a matte ebonized finish that creates a window-like transition between the room and the imagined landscape beyond."
+  },
+  "recommended_lighting": {
+    "type": "double_picture_lights",
+    "placement": "dual_angled",
+    "color_temp_k": 2700,
+    "beam_angle_deg": 30,
+    "description": "Twin adjustable picture lights with 30\u00b0 beams, mounted at 45\u00b0 angles from each top corner. The warm 2700K light enriches the atmospheric depth."
+  },
+  "recommended_placement": "Above the primary seating area, positioned to be the first piece seen when entering the room",
+  "dimensions_cm": {
+    "width": 200,
+    "height": 150
+  }
+}

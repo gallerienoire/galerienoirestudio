@@ -1,0 +1,30 @@
+{
+  "slug": "architectural_geometric",
+  "title": "Cartography Schema 200",
+  "artist_persona": "An artist working at the intersection of architecture and abstract geometry",
+  "mood": "structured elegant",
+  "description": "A precision-crafted geometric study that echoes the Scandinavian-inspired architecture of the space. Intersecting planes in #d8d4c8, #997a4c, and #a8a7a1 create depth that draws the eye across the 200cm width. The refined contrast relates to the room's medium lighting, while the compositional rhythm mirrors the 0.61 proportion of vertical to horizontal lines in the room.",
+  "artwork_rationale": "This piece responds to the room's Scandinavian architecture (high confidence) with its refined composition. The intimately scaled ceiling (3.4m) and bright crisp lighting conditions informed the scale and contrast. At 3.8m viewing distance, the large statement format fills the optimal field of view.",
+  "color_rationale": "The palette draws from the room's dominant #d8d4c8 and accent #997a4c tones, ensuring mixed harmony with the existing warm interior. The low vibrancy level matches the room's quiet, understated character.",
+  "image_prompt": "A high-end digital artwork titled 'Cartography Schema 200', large statement format. A precision-crafted geometric study that echoes the Scandinavian-inspired architecture of the space. Intersecting planes in #d8d4c8, #997a4c, and #a8a7a1 create depth that draws the eye across the 200cm width. The refined contrast relates to the room's medium lighting, while the compositional rhythm mirrors the 0.61 proportion of vertical to horizontal lines in the room. The piece is museum-quality, suitable for a luxury interior. Color palette centered on #d8d4c8 with #997a4c accents. Style: structured elegant. The artwork should feel like a commissioned gallery piece \u2014 not generic, not templated, but intentionally made for this specific room with Scandinavian architecture.",
+  "recommended_frame": {
+    "style": "cleat_hanger",
+    "material": "black_steel",
+    "finish": "matte",
+    "profile": "minimal_channel",
+    "depth_cm": 2,
+    "description": "A slim black steel channel frame \u2014 nearly invisible \u2014 that lets the geometric composition speak directly to the wall. Mounted on a cleat system for perfect alignment."
+  },
+  "recommended_lighting": {
+    "type": "linear_led",
+    "placement": "top_edge_backlight",
+    "color_temp_k": 3500,
+    "beam_angle_deg": 120,
+    "description": "An ultra-thin linear LED strip mounted behind the frame's top edge, casting a soft wash down the surface. 3500K for crisp geometric clarity."
+  },
+  "recommended_placement": "Secondary wall or above a console table, smaller scale as an accent counterpoint",
+  "dimensions_cm": {
+    "width": 100,
+    "height": 80
+  }
+}

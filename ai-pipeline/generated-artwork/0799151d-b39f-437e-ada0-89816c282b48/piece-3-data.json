@@ -1,0 +1,30 @@
+{
+  "slug": "botanical_study",
+  "title": "Study in III",
+  "artist_persona": "A naturalist illustrator working in the tradition of botanical art",
+  "mood": "organic grounded",
+  "description": "A refined botanical study that introduces organic softness to the Bohemian Eclectic interior. Delicate foliage forms in #997a4d and #c4ddeb are rendered against a subdued ground. The balanced palette complements the room's Bohemian Eclectic lines while the natural subject matter provides visual relief from the varied textured surfaces.",
+  "artwork_rationale": "This piece responds to the room's Bohemian Eclectic architecture (high confidence) with its refined composition. The intimately scaled ceiling (3.4m) and bright crisp lighting conditions informed the scale and contrast. At 3.8m viewing distance, the large statement format fills the optimal field of view.",
+  "color_rationale": "The palette draws from the room's dominant #ded2bf and accent #997a4d tones, ensuring mixed harmony with the existing neutral interior. The medium vibrancy level matches the room's subdued character.",
+  "image_prompt": "A high-end digital artwork titled 'Study in III', large statement format. A refined botanical study that introduces organic softness to the Bohemian Eclectic interior. Delicate foliage forms in #997a4d and #c4ddeb are rendered against a subdued ground. The balanced palette complements the room's Bohemian Eclectic lines while the natural subject matter provides visual relief from the varied textured surfaces. The piece is museum-quality, suitable for a luxury interior. Color palette centered on #ded2bf with #997a4d accents. Style: organic grounded. The artwork should feel like a commissioned gallery piece \u2014 not generic, not templated, but intentionally made for this specific room with Bohemian Eclectic architecture.",
+  "recommended_frame": {
+    "style": "classic_molding",
+    "material": "polished_brass",
+    "finish": "antique",
+    "profile": "ornamental",
+    "depth_cm": 4,
+    "description": "A classic polished brass molding with a subtle antique patina that complements the refined botanical subject without overpowering it."
+  },
+  "recommended_lighting": {
+    "type": "adjustable_picture_light",
+    "placement": "single_angled",
+    "color_temp_k": 3000,
+    "beam_angle_deg": 35,
+    "description": "An adjustable picture light with a narrow 35\u00b0 beam, angled to highlight the fine detail of the botanical rendering. 3000K to keep the greens fresh."
+  },
+  "recommended_placement": "Near the window or naturally lit wall area, to interact with the bright crisp natural light",
+  "dimensions_cm": {
+    "width": 200,
+    "height": 150
+  }
+}

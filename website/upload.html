@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start Your Room Transformation — Galerie Noire</title>
+  <meta name="description" content="Upload room photos, measurements, and your inspiration. Our AI analyzes your space and commissions five custom artworks tailored to your room.">
+  <meta property="og:site_name" content="Galerie Noire">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://galerienoirestudio.com/upload">
+  <meta property="og:title" content="Begin Your Room Design | Galerie Noire">
+  <meta property="og:description" content="Tell us about your space. We'll create art that belongs in your home.">
+  <meta property="og:image" content="/design/upload-mockup.jpg">
+  <link rel="canonical" href="https://galerienoirestudio.com/upload">
+  <link rel="icon" type="image/png" href="/design/logo-icon.png">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <span class="logo-dot"></span>
+        Galerie Noire
+      </a>
+      <ul class="nav-links">
+        <li><a href="/process.html">Process</a></li>
+        <li><a href="/gallery.html">Gallery</a></li>
+        <li><a href="/#pricing">Pricing</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/upload.html" class="nav-cta">Start Your Room</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Upload Hero -->
+  <section class="upload-hero">
+    <div class="container" style="text-align:center;">
+      <div class="hero-decoration" style="margin:0 auto 2rem;"></div>
+      <p class="section-label">Begin Your Transformation</p>
+      <h1>Tell us about your room.</h1>
+      <p style="color:var(--warm-grey); font-size:1.2rem; max-width:540px; margin:1.5rem auto 0; line-height:1.7;">
+        The more we know, the more personal your artwork and design will be. Photos, measurements, inspiration — it all matters.
+      </p>
+    </div>
+  </section>
+
+  <!-- Upload Form -->
+  <section class="section section-dark">
+    <div class="container">
+      <form class="upload-form" id="upload-form">
+
+        <!-- Room Photos -->
+        <div class="form-section fade-in">
+          <h3>Room Photos</h3>
+          <div class="form-group">
+            <label>Upload photos of your room</label>
+            <div class="file-upload-area" id="file-upload-area">
+              <div class="upload-icon">⌇</div>
+              <p id="upload-text">Drag and drop photos here, or click to browse</p>
+              <p class="small">Upload at least 1 photo of your room. Wide shots preferred.</p>
+              <input type="file" id="roomPhoto" name="roomPhoto" accept="image/*" multiple style="display:none;">
+            </div>
+          </div>
+          <div class="preview-grid" id="preview-grid">
+          </div>
+        </div>
+
+        <!-- Room Details -->
+        <div class="form-section fade-in">
+          <h3>Room Details</h3>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem;">
+            <div class="form-group">
+              <label>Room Type</label>
+              <select name="roomType">
+                <option value="" disabled selected>Select room type</option>
+                <option value="living-room">Living Room</option>
+                <option value="dining-room">Dining Room</option>
+                <option value="primary-bedroom">Primary Bedroom</option>
+                <option value="guest-bedroom">Guest Bedroom</option>
+                <option value="home-office">Home Office</option>
+                <option value="entry-foyer">Entry / Foyer</option>
+                <option value="library-study">Library / Study</option>
+                <option value="entire-home">Entire Home</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Ceiling Height</label>
+              <select name="ceilingHeight">
+                <option value="" disabled selected>Select height</option>
+                <option value="standard">Standard (8 ft / 2.4 m)</option>
+                <option value="tall">Tall (9-10 ft / 2.7-3 m)</option>
+                <option value="cathedral">Cathedral (12+ ft / 3.7+ m)</option>
+                <option value="unsure">Not sure</option>
+              </select>
+            </div>
+          </div>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem;">
+            <div class="form-group">
+              <label>Room Width</label>
+              <input type="text" name="roomWidth" placeholder="e.g. 14 ft / 4.3 m">
+            </div>
+            <div class="form-group">
+              <label>Room Length</label>
+              <input type="text" name="roomLength" placeholder="e.g. 18 ft / 5.5 m">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Natural Light</label>
+            <select name="naturalLight">
+              <option value="" disabled selected>Describe the natural light</option>
+              <option value="abundant">Abundant — large windows, south-facing</option>
+              <option value="moderate">Moderate — average windows, some direct light</option>
+              <option value="low">Low — small windows, north-facing, shaded</option>
+              <option value="artificial">Artificial only — no windows</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Existing Wall Color</label>
+            <input type="text" name="wallColor" placeholder="e.g. Warm white, light grey, dark green... or 'not sure'">
+          </div>
+        </div>
+
+        <!-- Existing Furniture -->
+        <div class="form-section fade-in">
+          <h3>Existing Furniture &amp; Decor</h3>
+          <div class="form-group">
+            <label>What furniture is already in the room? (describe or list)</label>
+            <textarea name="existingFurniture" placeholder="e.g. A cream linen sofa, a walnut coffee table, two brass floor lamps, a jute rug..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>Furniture style (if known)</label>
+            <select name="furnitureStyle">
+              <option value="" disabled selected>Select closest style</option>
+              <option value="mid-century">Mid-century modern</option>
+              <option value="scandinavian">Scandinavian minimal</option>
+              <option value="traditional">Traditional / Classic</option>
+              <option value="industrial">Industrial loft</option>
+              <option value="bohemian">Bohemian / Eclectic</option>
+              <option value="contemporary">Contemporary / Modern</option>
+              <option value="transitional">Transitional</option>
+              <option value="mixed">Not sure / Mixed</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Inspiration -->
+        <div class="form-section fade-in">
+          <h3>Your Inspiration</h3>
+          <div class="form-group">
+            <label>Pinterest board URL (optional)</label>
+            <input type="url" name="pinterestUrl" placeholder="https://pinterest.com/your-board">
+          </div>
+          <div class="form-group">
+            <label>Favorite hotels, restaurants, or spaces (optional)</label>
+            <textarea name="favoriteSpaces" placeholder="e.g. The lobby of The Ned in London, Room at Amangiri, The bar at Sunset Tower..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>How do you want the room to feel?</label>
+            <textarea name="roomVibe" placeholder="e.g. Serene and calm — a place to unwind after work. Warm, moody, and intimate for dinner parties. Bright and creative for a home studio."></textarea>
+          </div>
+        </div>
+
+        <!-- Tier Selection -->
+        <div class="form-section fade-in">
+          <h3>Choose Your Experience</h3>
+          <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:1rem;">
+            <label style="display:block; border:1px solid rgba(197,165,90,0.15); padding:1.5rem; text-align:center; cursor:pointer; transition:border-color var(--transition);">
+              <input type="radio" name="tier" value="starter" style="margin-bottom:0.75rem;">
+              <div style="font-family:var(--font-heading); font-size:1.1rem; margin-bottom:0.25rem;">Starter</div>
+              <div style="font-family:var(--font-heading); font-size:1.8rem; font-weight:700; color:var(--brass-gold);">$199</div>
+              <div style="font-size:0.8rem; color:var(--warm-grey);">One room, digital artwork bundle</div>
+            </label>
+            <label style="display:block; border:1px solid var(--brass-gold); padding:1.5rem; text-align:center; cursor:pointer; background:rgba(197,165,90,0.04); transition:border-color var(--transition);">
+              <input type="radio" name="tier" value="signature" checked style="margin-bottom:0.75rem;">
+              <div style="font-family:var(--font-heading); font-size:1.1rem; margin-bottom:0.25rem;">Signature</div>
+              <div style="font-family:var(--font-heading); font-size:1.8rem; font-weight:700; color:var(--brass-gold);">$599</div>
+              <div style="font-size:0.8rem; color:var(--warm-grey);">Full room redesign — most popular</div>
+            </label>
+            <label style="display:block; border:1px solid rgba(197,165,90,0.15); padding:1.5rem; text-align:center; cursor:pointer; transition:border-color var(--transition);">
+              <input type="radio" name="tier" value="estate" style="margin-bottom:0.75rem;">
+              <div style="font-family:var(--font-heading); font-size:1.1rem; margin-bottom:0.25rem;">Estate</div>
+              <div style="font-family:var(--font-heading); font-size:1.8rem; font-weight:700; color:var(--brass-gold);">$2,500+</div>
+              <div style="font-size:0.8rem; color:var(--warm-grey);">Whole home, white-glove service</div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="form-section fade-in">
+          <h3>Your Contact</h3>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem;">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" name="name" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+        </div>
+
+        <!-- Submit -->
+        <div class="form-actions fade-in">
+          <button type="button" class="btn btn-primary" id="submit-btn" style="min-width:280px;">Submit My Room</button>
+          <div id="form-status" style="margin-top:1rem;"></div>
+          <p style="color:var(--warm-grey-light); font-size:0.8rem; margin-top:1rem;">We'll review your space and respond within 48 hours with your custom artwork and design.</p>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="nav-logo">
+            <span class="logo-dot"></span>
+            Galerie Noire
+          </a>
+          <p>We design homes around art created exclusively for you. Every piece is custom, not stock. Every room tells your story.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="/process.html">Our Process</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/#pricing">Pricing</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="/upload.html">Room Design</a></li>
+            <li><a href="/upload.html">Art Commission</a></li>
+            <li><a href="/contact.html">Estate Collection</a></li>
+            <li><a href="/upload.html">Seasonal Refresh</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Connect</h5>
+          <ul>
+            <li><a href="mailto:hello@galerienoire.com">Email</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Galerie Noire. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#">Instagram</a>
+          <a href="#">Pinterest</a>
+          <a href="#">Houzz</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+<script src="/js/upload-form.js"></script>
+</body>
+</html>

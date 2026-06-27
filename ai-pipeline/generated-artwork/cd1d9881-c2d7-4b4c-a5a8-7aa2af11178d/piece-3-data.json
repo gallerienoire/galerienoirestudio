@@ -1,0 +1,30 @@
+{
+  "slug": "botanical_study",
+  "title": "Verdure II",
+  "artist_persona": "A naturalist illustrator working in the tradition of botanical art",
+  "mood": "organic grounded",
+  "description": "A refined botanical study that introduces organic softness to the Mid Century Modern interior. Delicate foliage forms in #1f160e and #4c3b2a are rendered against a subdued ground. The sun-warmed palette complements the room's Mid Century Modern lines while the natural subject matter provides visual relief from the varied textured surfaces.",
+  "artwork_rationale": "This piece responds to the room's Mid Century Modern architecture (high confidence) with its subtle composition. The intimately scaled ceiling (3.2m) and cozy soft lighting conditions informed the scale and contrast. At 3.8m viewing distance, the large statement format fills the optimal field of view.",
+  "color_rationale": "The palette draws from the room's dominant #030301 and accent #1f160e tones, ensuring analogous harmony with the existing warm interior. The medium vibrancy level matches the room's subdued character.",
+  "image_prompt": "A high-end digital artwork titled 'Verdure II', large statement format. A refined botanical study that introduces organic softness to the Mid Century Modern interior. Delicate foliage forms in #1f160e and #4c3b2a are rendered against a subdued ground. The sun-warmed palette complements the room's Mid Century Modern lines while the natural subject matter provides visual relief from the varied textured surfaces. The piece is museum-quality, suitable for a luxury interior. Color palette centered on #030301 with #1f160e accents. Style: organic grounded. The artwork should feel like a commissioned gallery piece \u2014 not generic, not templated, but intentionally made for this specific room with Mid Century Modern architecture.",
+  "recommended_frame": {
+    "style": "classic_molding",
+    "material": "polished_brass",
+    "finish": "antique",
+    "profile": "ornamental",
+    "depth_cm": 4,
+    "description": "A classic polished brass molding with a subtle antique patina that complements the refined botanical subject without overpowering it."
+  },
+  "recommended_lighting": {
+    "type": "adjustable_picture_light",
+    "placement": "single_angled",
+    "color_temp_k": 3000,
+    "beam_angle_deg": 35,
+    "description": "An adjustable picture light with a narrow 35\u00b0 beam, angled to highlight the fine detail of the botanical rendering. 3000K to keep the greens fresh."
+  },
+  "recommended_placement": "Near the window or naturally lit wall area, to interact with the cozy soft natural light",
+  "dimensions_cm": {
+    "width": 200,
+    "height": 150
+  }
+}

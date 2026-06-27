@@ -1,0 +1,6 @@
+# Galerie Noire — AI Pipeline Dependencies
+# Install: pip install -r requirements.txt
+
+Pillow>=10.0.0
+numpy>=1.24.0
+scipy>=1.10.0

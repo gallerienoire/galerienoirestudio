@@ -1,0 +1,30 @@
+{
+  "slug": "abstract_atmosphere",
+  "title": "Lumina Study",
+  "artist_persona": "A color-field painter influenced by Rothko and contemporary light art",
+  "mood": "meditative luminous",
+  "description": "Luminous layers of #030301 and #1f160e float within a even field, echoing the cozy soft atmosphere of the room. Soft transitions between hues mirror the heavy quality of the space's natural light. This piece changes character throughout the day, revealing new depth as the room's cozy soft shifts.",
+  "artwork_rationale": "This piece responds to the room's Mid Century Modern architecture (high confidence) with its subtle composition. The intimately scaled ceiling (3.2m) and cozy soft lighting conditions informed the scale and contrast. At 3.8m viewing distance, the large statement format fills the optimal field of view.",
+  "color_rationale": "The palette draws from the room's dominant #030301 and accent #1f160e tones, ensuring analogous harmony with the existing warm interior. The medium vibrancy level matches the room's subdued character.",
+  "image_prompt": "A high-end digital artwork titled 'Lumina Study', large statement format. Luminous layers of #030301 and #1f160e float within a even field, echoing the cozy soft atmosphere of the room. Soft transitions between hues mirror the heavy quality of the space's natural light. This piece changes character throughout the day, revealing new depth as the room's cozy soft shifts. The piece is museum-quality, suitable for a luxury interior. Color palette centered on #030301 with #1f160e accents. Style: meditative luminous. The artwork should feel like a commissioned gallery piece \u2014 not generic, not templated, but intentionally made for this specific room with Mid Century Modern architecture.",
+  "recommended_frame": {
+    "style": "floating_frame",
+    "material": "natural_oak",
+    "finish": "matte",
+    "profile": "shadow_gap",
+    "depth_cm": 3,
+    "description": "A light natural oak floating frame with a shadow gap that separates the artwork from the wall, allowing the luminous colors to breathe."
+  },
+  "recommended_lighting": {
+    "type": "wall_washer",
+    "placement": "recessed_ceiling",
+    "color_temp_k": 3000,
+    "beam_angle_deg": 60,
+    "description": "A recessed wall-washing LED fixture, positioned to graze the surface gently. 3000K to preserve the color relationships in the layered composition."
+  },
+  "recommended_placement": "Opposite the main seating position, at 3.8m viewing distance for optimal color field immersion",
+  "dimensions_cm": {
+    "width": 200,
+    "height": 150
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "slug": "statement_composition",
+  "title": "Anchorage I",
+  "artist_persona": "A contemporary artist working in large-format mixed media",
+  "mood": "bold contemplative",
+  "description": "A large-format Mid Century Modern-inspired composition that anchors the room. Bold gestural marks in #80695c and #674d3e dance across a quiet, understated field, creating a visual anchor that draws the eye from the seated viewing position. The scale commands attention while the palette remains in conversation with the room's warm, honeyed tones.",
+  "artwork_rationale": "This piece responds to the room's Mid Century Modern architecture (high confidence) with its refined composition. The intimately scaled ceiling (3.4m) and natural even lighting conditions informed the scale and contrast. At 3.8m viewing distance, the large statement format fills the optimal field of view.",
+  "color_rationale": "The palette draws from the room's dominant #80695c and accent #674d3e tones, ensuring mixed harmony with the existing warm interior. The low vibrancy level matches the room's quiet, understated character.",
+  "image_prompt": "A high-end digital artwork titled 'Anchorage I', large statement format. A large-format Mid Century Modern-inspired composition that anchors the room. Bold gestural marks in #80695c and #674d3e dance across a quiet, understated field, creating a visual anchor that draws the eye from the seated viewing position. The scale commands attention while the palette remains in conversation with the room's warm, honeyed tones. The piece is museum-quality, suitable for a luxury interior. Color palette centered on #80695c with #674d3e accents. Style: bold contemplative. The artwork should feel like a commissioned gallery piece \u2014 not generic, not templated, but intentionally made for this specific room with Mid Century Modern architecture.",
+  "recommended_frame": {
+    "style": "tray_frame",
+    "material": "brushed_brass",
+    "finish": "satin",
+    "profile": "clean_minimal",
+    "depth_cm": 5,
+    "description": "A deep tray frame in satin brushed brass that floats the artwork away from the wall, creating a subtle shadow gap that enhances the piece's sculptural presence."
+  },
+  "recommended_lighting": {
+    "type": "gallery_picture_light",
+    "placement": "single_centered",
+    "color_temp_k": 2700,
+    "beam_angle_deg": 40,
+    "description": "A single adjustable gallery light with a warm 2700K LED, centered above the artwork. The 40\u00b0 beam angle illuminates the entire piece without glare."
+  },
+  "recommended_placement": "Primary wall (top left quadrant), centered at eye level (200\u00d7150cm)",
+  "dimensions_cm": {
+    "width": 200,
+    "height": 150
+  }
+}

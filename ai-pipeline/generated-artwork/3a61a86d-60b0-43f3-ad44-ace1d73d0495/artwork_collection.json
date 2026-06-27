@@ -1,0 +1,196 @@
+{
+  "room_summary": {
+    "room_type": "bedroom or dining",
+    "architecture_style": "Mid Century Modern",
+    "ceiling_height_m": 3.4,
+    "primary_wall_quadrant": "top left",
+    "color_temperature": "warm",
+    "lighting_mood": "natural even"
+  },
+  "artwork_collection": {
+    "count": 5,
+    "description": "Five custom digital artworks commissioned for this bedroom or dining \u2014 each piece designed to harmonize with the Mid Century Modern aesthetic, warm, honeyed palette, and natural even atmosphere.",
+    "pieces": [
+      {
+        "slug": "statement_composition",
+        "title": "Anchorage I",
+        "artist_persona": "A contemporary artist working in large-format mixed media",
+        "mood": "bold contemplative",
+        "description": "A large-format Mid Century Modern-inspired composition that anchors the room. Bold gestural marks in #80695c and #674d3e dance across a quiet, understated field, creating a visual anchor that draws the eye from the seated viewing position. The scale commands attention while the palette remains in conversation with the room's warm, honeyed tones.",
+        "artwork_rationale": "This piece responds to the room's Mid Century Modern architecture (high confidence) with its refined composition. The intimately scaled ceiling (3.4m) and natural even lighting conditions informed the scale and contrast. At 3.8m viewing distance, the large statement format fills the optimal field of view.",
+        "color_rationale": "The palette draws from the room's dominant #80695c and accent #674d3e tones, ensuring mixed harmony with the existing warm interior. The low vibrancy level matches the room's quiet, understated character.",
+        "image_prompt": "A high-end digital artwork titled 'Anchorage I', large statement format. A large-format Mid Century Modern-inspired composition that anchors the room. Bold gestural marks in #80695c and #674d3e dance across a quiet, understated field, creating a visual anchor that draws the eye from the seated viewing position. The scale commands attention while the palette remains in conversation with the room's warm, honeyed tones. The piece is museum-quality, suitable for a luxury interior. Color palette centered on #80695c with #674d3e accents. Style: bold contemplative. The artwork should feel like a commissioned gallery piece \u2014 not generic, not templated, but intentionally made for this specific room with Mid Century Modern architecture.",
+        "recommended_frame": {
+          "style": "tray_frame",
+          "material": "brushed_brass",
+          "finish": "satin",
+          "profile": "clean_minimal",
+          "depth_cm": 5,
+          "description": "A deep tray frame in satin brushed brass that floats the artwork away from the wall, creating a subtle shadow gap that enhances the piece's sculptural presence."
+        },
+        "recommended_lighting": {
+          "type": "gallery_picture_light",
+          "placement": "single_centered",
+          "color_temp_k": 2700,
+          "beam_angle_deg": 40,
+          "description": "A single adjustable gallery light with a warm 2700K LED, centered above the artwork. The 40\u00b0 beam angle illuminates the entire piece without glare."
+        },
+        "recommended_placement": "Primary wall (top left quadrant), centered at eye level (200\u00d7150cm)",
+        "dimensions_cm": {
+          "width": 200,
+          "height": 150
+        },
+        "generated_image": "artwork-1-anchorage-i.png",
+        "image_url": "/artwork/3a61a86d-60b0-43f3-ad44-ace1d73d0495/artwork-1-anchorage-i.png",
+        "file_url": "/artwork/3a61a86d-60b0-43f3-ad44-ace1d73d0495/artwork-1-anchorage-i.png",
+        "file_size_bytes": 1452151,
+        "ai_generated": true
+      },
+      {
+        "slug": "abstract_atmosphere",
+        "title": "Lumina Study",
+        "artist_persona": "A color-field painter influenced by Rothko and contemporary light art",
+        "mood": "meditative luminous",
+        "description": "Luminous layers of #80695c and #674d3e float within a even field, echoing the natural even atmosphere of the room. Soft transitions between hues mirror the moderate quality of the space's natural light. This piece changes character throughout the day, revealing new depth as the room's natural even shifts.",
+        "artwork_rationale": "This piece responds to the room's Mid Century Modern architecture (high confidence) with its refined composition. The intimately scaled ceiling (3.4m) and natural even lighting conditions informed the scale and contrast. At 3.8m viewing distance, the large statement format fills the optimal field of view.",
+        "color_rationale": "The palette draws from the room's dominant #80695c and accent #674d3e tones, ensuring mixed harmony with the existing warm interior. The low vibrancy level matches the room's quiet, understated character.",
+        "image_prompt": "A high-end digital artwork titled 'Lumina Study', large statement format. Luminous layers of #80695c and #674d3e float within a even field, echoing the natural even atmosphere of the room. Soft transitions between hues mirror the moderate quality of the space's natural light. This piece changes character throughout the day, revealing new depth as the room's natural even shifts. The piece is museum-quality, suitable for a luxury interior. Color palette centered on #80695c with #674d3e accents. Style: meditative luminous. The artwork should feel like a commissioned gallery piece \u2014 not generic, not templated, but intentionally made for this specific room with Mid Century Modern architecture.",
+        "recommended_frame": {
+          "style": "floating_frame",
+          "material": "natural_oak",
+          "finish": "matte",
+          "profile": "shadow_gap",
+          "depth_cm": 3,
+          "description": "A light natural oak floating frame with a shadow gap that separates the artwork from the wall, allowing the luminous colors to breathe."
+        },
+        "recommended_lighting": {
+          "type": "wall_washer",
+          "placement": "recessed_ceiling",
+          "color_temp_k": 3000,
+          "beam_angle_deg": 60,
+          "description": "A recessed wall-washing LED fixture, positioned to graze the surface gently. 3000K to preserve the color relationships in the layered composition."
+        },
+        "recommended_placement": "Opposite the main seating position, at 3.8m viewing distance for optimal color field immersion",
+        "dimensions_cm": {
+          "width": 200,
+          "height": 150
+        },
+        "generated_image": "artwork-2-lumina-study.png",
+        "image_url": "/artwork/3a61a86d-60b0-43f3-ad44-ace1d73d0495/artwork-2-lumina-study.png",
+        "file_url": "/artwork/3a61a86d-60b0-43f3-ad44-ace1d73d0495/artwork-2-lumina-study.png",
+        "file_size_bytes": 1403124,
+        "ai_generated": true
+      },
+      {
+        "slug": "botanical_study",
+        "title": "Verdure II",
+        "artist_persona": "A naturalist illustrator working in the tradition of botanical art",
+        "mood": "organic grounded",
+        "description": "A refined botanical study that introduces organic softness to the Mid Century Modern interior. Delicate foliage forms in #674d3e and #a79280 are rendered against a quiet, understated ground. The sun-warmed palette complements the room's Mid Century Modern lines while the natural subject matter provides visual relief from the varied textured surfaces.",
+        "artwork_rationale": "This piece responds to the room's Mid Century Modern architecture (high confidence) with its refined composition. The intimately scaled ceiling (3.4m) and natural even lighting conditions informed the scale and contrast. At 3.8m viewing distance, the large statement format fills the optimal field of view.",
+        "color_rationale": "The palette draws from the room's dominant #80695c and accent #674d3e tones, ensuring mixed harmony with the existing warm interior. The low vibrancy level matches the room's quiet, understated character.",
+        "image_prompt": "A high-end digital artwork titled 'Verdure II', large statement format. A refined botanical study that introduces organic softness to the Mid Century Modern interior. Delicate foliage forms in #674d3e and #a79280 are rendered against a quiet, understated ground. The sun-warmed palette complements the room's Mid Century Modern lines while the natural subject matter provides visual relief from the varied textured surfaces. The piece is museum-quality, suitable for a luxury interior. Color palette centered on #80695c with #674d3e accents. Style: organic grounded. The artwork should feel like a commissioned gallery piece \u2014 not generic, not templated, but intentionally made for this specific room with Mid Century Modern architecture.",
+        "recommended_frame": {
+          "style": "classic_molding",
+          "material": "polished_brass",
+          "finish": "antique",
+          "profile": "ornamental",
+          "depth_cm": 4,
+          "description": "A classic polished brass molding with a subtle antique patina that complements the refined botanical subject without overpowering it."
+        },
+        "recommended_lighting": {
+          "type": "adjustable_picture_light",
+          "placement": "single_angled",
+          "color_temp_k": 3000,
+          "beam_angle_deg": 35,
+          "description": "An adjustable picture light with a narrow 35\u00b0 beam, angled to highlight the fine detail of the botanical rendering. 3000K to keep the greens fresh."
+        },
+        "recommended_placement": "Near the window or naturally lit wall area, to interact with the natural even natural light",
+        "dimensions_cm": {
+          "width": 200,
+          "height": 150
+        },
+        "generated_image": "artwork-3-verdure-ii.png",
+        "image_url": "/artwork/3a61a86d-60b0-43f3-ad44-ace1d73d0495/artwork-3-verdure-ii.png",
+        "file_url": "/artwork/3a61a86d-60b0-43f3-ad44-ace1d73d0495/artwork-3-verdure-ii.png",
+        "file_size_bytes": 1957589,
+        "ai_generated": true
+      },
+      {
+        "slug": "architectural_geometric",
+        "title": "Interlock in 200 Parts",
+        "artist_persona": "An artist working at the intersection of architecture and abstract geometry",
+        "mood": "structured elegant",
+        "description": "A precision-crafted geometric study that echoes the Mid Century Modern-inspired architecture of the space. Intersecting planes in #80695c, #674d3e, and #a79280 create depth that draws the eye across the 200cm width. The refined contrast relates to the room's medium lighting, while the compositional rhythm mirrors the 1.05 proportion of vertical to horizontal lines in the room.",
+        "artwork_rationale": "This piece responds to the room's Mid Century Modern architecture (high confidence) with its refined composition. The intimately scaled ceiling (3.4m) and natural even lighting conditions informed the scale and contrast. At 3.8m viewing distance, the large statement format fills the optimal field of view.",
+        "color_rationale": "The palette draws from the room's dominant #80695c and accent #674d3e tones, ensuring mixed harmony with the existing warm interior. The low vibrancy level matches the room's quiet, understated character.",
+        "image_prompt": "A high-end digital artwork titled 'Interlock in 200 Parts', large statement format. A precision-crafted geometric study that echoes the Mid Century Modern-inspired architecture of the space. Intersecting planes in #80695c, #674d3e, and #a79280 create depth that draws the eye across the 200cm width. The refined contrast relates to the room's medium lighting, while the compositional rhythm mirrors the 1.05 proportion of vertical to horizontal lines in the room. The piece is museum-quality, suitable for a luxury interior. Color palette centered on #80695c with #674d3e accents. Style: structured elegant. The artwork should feel like a commissioned gallery piece \u2014 not generic, not templated, but intentionally made for this specific room with Mid Century Modern architecture.",
+        "recommended_frame": {
+          "style": "cleat_hanger",
+          "material": "black_steel",
+          "finish": "matte",
+          "profile": "minimal_channel",
+          "depth_cm": 2,
+          "description": "A slim black steel channel frame \u2014 nearly invisible \u2014 that lets the geometric composition speak directly to the wall. Mounted on a cleat system for perfect alignment."
+        },
+        "recommended_lighting": {
+          "type": "linear_led",
+          "placement": "top_edge_backlight",
+          "color_temp_k": 3500,
+          "beam_angle_deg": 120,
+          "description": "An ultra-thin linear LED strip mounted behind the frame's top edge, casting a soft wash down the surface. 3500K for crisp geometric clarity."
+        },
+        "recommended_placement": "Secondary wall or above a console table, smaller scale as an accent counterpoint",
+        "dimensions_cm": {
+          "width": 100,
+          "height": 80
+        },
+        "generated_image": "artwork-4-interlock-in-200-parts.png",
+        "image_url": "/artwork/3a61a86d-60b0-43f3-ad44-ace1d73d0495/artwork-4-interlock-in-200-parts.png",
+        "file_url": "/artwork/3a61a86d-60b0-43f3-ad44-ace1d73d0495/artwork-4-interlock-in-200-parts.png",
+        "file_size_bytes": 1659000,
+        "ai_generated": true
+      },
+      {
+        "slug": "atmospheric_landscape",
+        "title": "Horizon Line, Evening",
+        "artist_persona": "A landscape painter working in the romantic tradition",
+        "mood": "expansive serene",
+        "description": "An atmospheric landscape that extends the intimately scaled ceiling into an imagined horizon. Layers of #80695c, #674d3e, and #a79280 recede into the distance, creating the illusion of a interior opening onto a wider vista. The natural even treatment aligns with the room's existing neutral light sources, making the piece feel like a natural extension of the space.",
+        "artwork_rationale": "This piece responds to the room's Mid Century Modern architecture (high confidence) with its refined composition. The intimately scaled ceiling (3.4m) and natural even lighting conditions informed the scale and contrast. At 3.8m viewing distance, the large statement format fills the optimal field of view.",
+        "color_rationale": "The palette draws from the room's dominant #80695c and accent #674d3e tones, ensuring mixed harmony with the existing warm interior. The low vibrancy level matches the room's quiet, understated character.",
+        "image_prompt": "A high-end digital artwork titled 'Horizon Line, Evening', large statement format. An atmospheric landscape that extends the intimately scaled ceiling into an imagined horizon. Layers of #80695c, #674d3e, and #a79280 recede into the distance, creating the illusion of a interior opening onto a wider vista. The natural even treatment aligns with the room's existing neutral light sources, making the piece feel like a natural extension of the space. The piece is museum-quality, suitable for a luxury interior. Color palette centered on #80695c with #674d3e accents. Style: expansive serene. The artwork should feel like a commissioned gallery piece \u2014 not generic, not templated, but intentionally made for this specific room with Mid Century Modern architecture.",
+        "recommended_frame": {
+          "style": "gallery_profile",
+          "material": "charcoal_wood",
+          "finish": "matte_ebp",
+          "profile": "contemporary",
+          "depth_cm": 4,
+          "description": "A charcoal-stained wood gallery profile frame with a matte ebonized finish that creates a window-like transition between the room and the imagined landscape beyond."
+        },
+        "recommended_lighting": {
+          "type": "double_picture_lights",
+          "placement": "dual_angled",
+          "color_temp_k": 2700,
+          "beam_angle_deg": 30,
+          "description": "Twin adjustable picture lights with 30\u00b0 beams, mounted at 45\u00b0 angles from each top corner. The warm 2700K light enriches the atmospheric depth."
+        },
+        "recommended_placement": "Above the primary seating area, positioned to be the first piece seen when entering the room",
+        "dimensions_cm": {
+          "width": 200,
+          "height": 150
+        },
+        "generated_image": "artwork-5-horizon-line-evening.png",
+        "image_url": "/artwork/3a61a86d-60b0-43f3-ad44-ace1d73d0495/artwork-5-horizon-line-evening.png",
+        "file_url": "/artwork/3a61a86d-60b0-43f3-ad44-ace1d73d0495/artwork-5-horizon-line,-evening.png",
+        "file_size_bytes": 1620968,
+        "ai_generated": true
+      }
+    ]
+  },
+  "metadata": {
+    "engine_version": "2.0.0",
+    "pipeline_step": 2,
+    "source_profile": "/tmp/gn-room-profile-3a61a86d-60b0-43f3-ad44-ace1d73d0495.json"
+  }
+}
