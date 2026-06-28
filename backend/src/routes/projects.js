@@ -3,7 +3,7 @@ const router = express.Router();
 const upload = require('../middleware/upload');
 const db = require('../utils/db');
 const { v4: uuidv4 } = require('uuid');
-const { runRoomAnalysis } = require('../utils/pipeline');
+const { runFullPipelineV2 } = require('../utils/pipeline_v2');
 
 // Create new project
 router.post('/', upload.array('roomPhoto', 10), async (req, res) => {
@@ -37,12 +37,12 @@ router.post('/', upload.array('roomPhoto', 10), async (req, res) => {
     if (roomPhotos.length > 0) {
       const fs = require('fs');
       const logFile = '/tmp/galerie-noire-backend.log';
-      fs.appendFileSync(logFile, `Triggering analysis for ${projectId} with paths ${JSON.stringify(req.files.map(f => f.path))}\n`);
-      runRoomAnalysis(projectId, req.files.map(f => f.path)).then(() => {
-        fs.appendFileSync(logFile, `Analysis finished for ${projectId}\n`);
+      fs.appendFileSync(logFile, `Triggering pipeline v2 for ${projectId} with paths ${JSON.stringify(req.files.map(f => f.path))}\n`);
+      runFullPipelineV2(projectId, req.files[0].path).then(() => {
+        fs.appendFileSync(logFile, `Pipeline v2 finished for ${projectId}\n`);
       }).catch(err => {
-        fs.appendFileSync(logFile, `Background analysis failed for ${projectId}: ${err.message}\n`);
-        console.error('Background analysis failed:', err);
+        fs.appendFileSync(logFile, `Background pipeline v2 failed for ${projectId}: ${err.message}\n`);
+        console.error('Background pipeline v2 failed:', err);
       });
     }
 
@@ -69,9 +69,30 @@ router.get('/:id', async (req, res) => {
     const project = results[0];
     const deliverables = await db.query('SELECT * FROM deliverables WHERE project_id = ?', [req.params.id]);
     
+    // Parse JSON content for all deliverables
+    const parsedDeliverables = deliverables.map(d => {
+      try {
+        return { ...d, content: typeof d.content === 'string' ? JSON.parse(d.content) : d.content };
+      } catch (e) {
+        return d;
+      }
+    });
+
+    // Helper to find specific deliverable types
+    const findType = (type) => parsedDeliverables.find(d => d.type === type)?.content;
+
     res.json({
       ...project,
-      deliverables
+      metadata: typeof project.metadata === 'string' ? JSON.parse(project.metadata) : project.metadata,
+      deliverables: parsedDeliverables,
+      // Richer output mapping
+      verified_profile: findType('verified_profile'),
+      design_recommendations: findType('design_recommendations'),
+      artwork_brief: findType('artwork_brief'),
+      curated_deliverable: findType('curated_deliverable'),
+      styling_guide: findType('styling_guide'),
+      shopping_guide: findType('shopping_guide'),
+      mockup: parsedDeliverables.find(d => d.type === 'room_mockup')
     });
   } catch (error) {
     console.error('Error fetching project:', error);

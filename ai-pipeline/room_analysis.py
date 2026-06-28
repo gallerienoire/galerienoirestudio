@@ -442,13 +442,22 @@ def detect_architecture_style(image, color_profile, lighting):
     best_style = max(scores, key=scores.get)
     best_score = scores[best_style]
     
-    # Calculate confidence
-    if best_score > 0.7:
+    # Calculate confidence — be honest about low scores
+    if best_score > 0.9:
         confidence = "high"
-    elif best_score > 0.5:
+    elif best_score > 0.7:
+        confidence = "medium_high"
+    elif best_score > 0.55:
         confidence = "medium"
+    elif best_score > 0.4:
+        confidence = "low_inferred"
     else:
-        confidence = "low"
+        confidence = "mixed_inferred"
+
+    # If top two scores are very close, report ambiguity
+    sorted_scores = sorted(scores.values(), reverse=True)
+    if len(sorted_scores) >= 2 and sorted_scores[0] - sorted_scores[1] < 0.08:
+        confidence = "ambiguous"
 
     return {
         "primary_style": best_style.replace("_", " ").title(),
@@ -460,7 +469,8 @@ def detect_architecture_style(image, color_profile, lighting):
             "vertical_horizontal_ratio": round(float(vh_ratio), 2),
             "texture_variance": round(float(texture_variance), 1),
             "warmth_index": round(float(warmth_index), 3)
-        }
+        },
+        "note": "Style detection is a statistical estimate based on color, edge, and texture analysis. For rooms with mixed or neutral characteristics, multiple styles may score similarly. Verify against in-person assessment."
     }
 
 
@@ -521,18 +531,42 @@ def detect_furniture(image):
     furniture_surface_quality = "smooth_unified" if lower_avg_variance < avg_color_variance * 0.8 else "varied_textured"
 
     # Estimate furniture items count from edge clusters
-    # (Simplified — full detection requires object detection model)
-    # Count connected components in the edge image
+    # Use connected components analysis on edge image
     from scipy.ndimage import label
     
     edge_binary = edge_mag > 30
     labeled, num_features = label(edge_binary)
     
-    # Filter tiny components
+    # Filter tiny components (noise) and find significant furniture-like regions
     unique, counts = np.unique(labeled[labeled > 0], return_counts=True)
-    significant_components = sum(1 for c in counts if c > 100)
     
-    estimated_items = min(8, max(2, significant_components // 3))
+    # Furniture pieces are typically 2-15% of image area
+    total_pixels = h * w
+    significant = [(c, cnt) for c, cnt in zip(unique, counts) 
+                   if cnt > total_pixels * 0.005 and cnt < total_pixels * 0.3]
+    
+    # Count large, distinct edge regions (potential furniture)
+    large_regions = [c for c, cnt in significant if cnt > total_pixels * 0.02]
+    medium_regions = [c for c, cnt in significant if cnt <= total_pixels * 0.02]
+    
+    # Estimate: large regions = major pieces (sofa, table), medium = smaller pieces (chairs, lamps)
+    estimated_items = len(large_regions) + max(0, len(medium_regions) // 2)
+    estimated_items = min(8, max(0, estimated_items))
+    
+    # Classify major pieces if possible
+    furniture_types = []
+    if len(large_regions) >= 1:
+        furniture_types.append("sofa_or_large_seating")
+    if len(large_regions) >= 2:
+        furniture_types.append("table_or_second_seating")
+    if len(medium_regions) >= 2:
+        furniture_types.append("possible_chairs_or_accent_pieces")
+    
+    # Calculate furniture coverage more accurately
+    # Look at bottom 60% of image for furniture-like regions
+    bottom_section = edge_mag[int(h * 0.4):, :]
+    furniture_mask = bottom_section > 20
+    furniture_coverage = min(0.85, furniture_mask.mean() * 2.0)
     
     # Layout detection
     # Check if furniture is arranged against walls (perimeter) or in center
@@ -555,12 +589,13 @@ def detect_furniture(image):
 
     return {
         "items_detected_count": estimated_items,
+        "furniture_types": furniture_types if furniture_types else ["undetermined"],
         "furniture_coverage": round(float(furniture_coverage), 2),
         "layout_style": layout,
         "furniture_surface": furniture_surface_quality,
-        "furniture_style_guess": "modern_sleek" if furniture_surface_quality == "smooth_unified" else "traditional_textured",
-        "confidence": "medium",
-        "notes": "Full object detection requires ML model integration; this is a statistical estimate based on edge and color analysis."
+        "furniture_style_guess": "not_determined_from_photo_alone",  # Removed: cannot reliably determine material/style from pixel analysis
+        "confidence": "low",  # Honest: edge-based detection is rough
+        "notes": "Furniture detection is a statistical estimate based on edge analysis and color variance. Specific furniture materials, brands, or finish types (e.g., 'brass', 'walnut') cannot be confirmed from a single photo. The items_detected_count and furniture_types are best guesses from connected-component analysis. These estimates should be validated with additional photos or an on-site visit."
     }
 
 

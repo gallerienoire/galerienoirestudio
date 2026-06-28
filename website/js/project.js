@@ -137,7 +137,7 @@ function renderProject(project) {
   html += '<section class="section section-dark"><div class="container" style="max-width:800px;text-align:center;">';
   html += '<div class="section-header fade-in"><p class="section-label">Visualization</p><h2>See Your Room Transformed</h2></div>';
   html += '<div style="margin-bottom:2rem;border:1px solid rgba(197,165,90,0.1);overflow:hidden;">';
-  html += '<img src="/design/room-preview.jpg" alt="Your room transformed with custom artwork" style="width:100%;height:auto;display:block;">';
+  html += '<img src="/design/room-transformed.jpg" alt="Your room transformed with custom artwork" style="width:100%;height:auto;display:block;">';
   html += '</div>';
   html += '<p style="color:var(--warm-grey);max-width:600px;margin:0 auto 1rem;font-size:1.05rem;line-height:1.7;">A preview of how your space could look with a custom-curated artwork as the centerpiece. This visualization adapts to your room\'s architecture, lighting, and palette.</p>';
   html += '</div></section>';
@@ -221,6 +221,37 @@ function renderProject(project) {
       html += '<div style="margin-bottom:2rem;"><h4 style="font-size:1.1rem;margin-bottom:0.5rem;">Viewing Distance</h4>';
       html += '<p style="color:var(--warm-grey);font-size:0.9rem;">' + viewDist + '</p></div>';
     }
+    html += '</div></div></section>';
+  }
+
+  // === Shopping Guide (show placeholder if missing) ===
+  var shoppingItems = stylingSummary && (stylingSummary.shopping_items || stylingSummary.shoppingItems || null);
+  if (shoppingItems && shoppingItems.length > 0) {
+    html += '<section class="section section-dark"><div class="container"><div class="section-header fade-in"><p class="section-label">Curated Shopping</p><h2>Shopping Guide</h2></div>';
+    html += '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;">';
+    shoppingItems.forEach(function(item) {
+      var itemName = item.name || item.product_name || '';
+      var itemDesc = item.description || '';
+      var itemPrice = item.price || '';
+      var itemUrl = item.url || item.product_url || '';
+      var itemBrand = item.brand || '';
+      html += '<div style="background:var(--soft-black);border:1px solid rgba(197,165,90,0.08);padding:1.5rem;">';
+      if (itemName) html += '<div style="font-family:var(--font-heading);font-size:1rem;margin-bottom:0.5rem;color:var(--cream);">' + itemName + '</div>';
+      if (itemBrand) html += '<div style="font-size:0.8rem;color:var(--brass-gold);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.5rem;">' + itemBrand + '</div>';
+      if (itemDesc) html += '<p style="color:var(--warm-grey);font-size:0.85rem;line-height:1.6;margin-bottom:0.75rem;">' + itemDesc + '</p>';
+      html += '<div style="display:flex;justify-content:space-between;align-items:center;">';
+      if (itemPrice) html += '<span style="color:var(--cream);font-family:var(--font-heading);">' + itemPrice + '</span>';
+      if (itemUrl) html += '<a href="' + itemUrl + '" target="_blank" rel="noopener" class="btn btn-outline" style="padding:0.5rem 1rem;font-size:0.7rem;">Shop</a>';
+      html += '</div></div>';
+    });
+    html += '</div></div></section>';
+  } else {
+    // Placeholder when shopping guide not yet ready
+    html += '<section class="section section-dark"><div class="container" style="text-align:center;">';
+    html += '<div class="section-header fade-in"><p class="section-label">Coming Soon</p><h2>Shopping Guide</h2></div>';
+    html += '<div style="max-width:500px;margin:0 auto;padding:2rem;border:1px solid rgba(197,165,90,0.08);">';
+    html += '<div style="font-size:2rem;color:var(--brass-gold);margin-bottom:1rem;">◈</div>';
+    html += '<p style="color:var(--warm-grey);font-size:1rem;line-height:1.7;">A curated shopping list of furniture, lighting, and accessories will appear here once your artwork collection is finalized. We\'ll include exact product links and alternatives at every price point.</p>';
     html += '</div></div></section>';
   }
 
